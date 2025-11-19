@@ -1,8 +1,8 @@
-# Java Practice
+# Esercizi Java
 
-A repository for practicing Java programming concepts and GUI development.
+Repository per esercitarsi con la programmazione Java e lo sviluppo di interfacce grafiche.
 
-## Project Structure
+## Struttura del Progetto
 
 ```
 Java--practice/
@@ -12,41 +12,39 @@ Java--practice/
             └── PrimaFinestra.java
 ```
 
-## Contents
+## Contenuti
 
 ### PrimaFinestra.java
-A simple Java AWT GUI application that demonstrates:
-- Creating a window using `Frame`
-- Custom window appearance with colors and positioning
-- Event handling with `WindowAdapter`
-- Graphics rendering with custom fonts and text drawing
+Applicazione grafica Java che utilizza AWT:
+- Creazione di una finestra con `Frame`
+- Personalizzazione con colori e posizionamento
+- Gestione eventi con `WindowAdapter`
+- Rendering grafico con font personalizzati
 
-**Features:**
-- Pink background window (800x700 pixels)
-- Custom title: "Prima Finestra"
-- Displays "La mia prima finestra in Java" text
-- Window close event handling
+**Caratteristiche:**
+- Finestra con sfondo rosa (800x700 pixel)
+- Titolo: "Prima Finestra"
+- Testo visualizzato: "La mia prima finestra in Java"
+- Gestione della chiusura della finestra
 
-## Running the Project
+## Eseguire il Progetto
 
-To compile and run the PrimaFinestra application:
+Per compilare ed eseguire l'applicazione PrimaFinestra:
 
 ```bash
-# Navigate to the source directory
+# Navigare nella directory sorgente
 cd Practice/Java/src
 
-# Compile
+# Compilare
 javac PrimaFinestra.java
 
-# Run
+# Eseguire
 java PrimaFinestra
 ```
 
-## Requirements
+## Requisiti
 
-- Java Development Kit (JDK) 8 or higher
-- Support for Java AWT (included in standard JDK)
+- Java Development Kit (JDK) 8 o superiore
+- Supporto per Java AWT (incluso nel JDK standard)
 
-## Notes
 
-This project uses the older AWT (Abstract Window Toolkit) framework for GUI development. For modern Java applications, consider using JavaFX or Swing.
