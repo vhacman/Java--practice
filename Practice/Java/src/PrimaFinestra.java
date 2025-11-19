@@ -20,9 +20,17 @@ public class    PrimaFinestra extends Frame {
 
     public void paint(Graphics g) {
         g.setColor(Color.black);
-        Font font = new Font("Arial", Font.BOLD, 20);
-        g.setFont(font);
-        g.drawString("La mia prima finestra in Java", 50, 50);
+        Font fontCorsivo = new Font("Arial", Font.ITALIC, 20);
+        g.setFont(fontCorsivo);
+        String  testo = "la mia prima finestra in Java";
+        FontMetrics fm = g.getFontMetrics(fontCorsivo);
+        int larghezzaTesto = fm.stringWidth(testo);
+        int altezzaTetso = fm.getHeight();
+
+        int x = (getWidth() - larghezzaTesto) / 2;
+        int y = (getHeight() - altezzaTetso) / 2;
+
+        g.drawString(testo, x, y);
     }
     public static void  main(String[] args) {
         new PrimaFinestra();
