@@ -12,8 +12,9 @@ Practice/
 │   ├── ex02/    # String Algorithms - Palindrome checker
 │   ├── ex03/    # Operators - Ternary operator practice
 │   ├── ex04/    # String Manipulation - Character analysis
-│   └── ex05/    # Pattern Generation - ASCII art
-└── out/         # File compilati (.class)
+│   ├── ex05/    # Pattern Generation - ASCII art
+│   └── ex06/    # Array Operations - Array sum calculation
+└── docs/        # Javadoc documentation
 ```
 
 ## 📚 Esercizi
@@ -73,6 +74,16 @@ Generatore di quadrati ASCII:
 - Output: quadrato `n×n` fatto di caratteri `+`
 - Utilizzo di `StringBuilder` per efficienza
 - **Concetti:** Nested loops, string building, pattern generation
+
+### ex06 - SumArray
+**File:** `Main.java`, `SumArray.java`
+
+Calcolo della somma degli elementi di un array:
+- Metodo `sum(double[] numbers)` che somma tutti gli elementi
+- Utilizzo del ciclo for-each per iterazione elegante
+- Gestione di numeri decimali (`double`)
+- **Concetti:** Array iteration, for-each loop, accumulator pattern
+
 ## Esecuzione
 
 ### Compilazione ed esecuzione singolo esercizio
@@ -100,6 +111,7 @@ javac ex02/*.java
 javac ex03/*.java
 javac ex04/*.java
 javac ex05/*.java
+javac ex06/*.java
 ```
 
 ### Quick Reference - Esecuzione diretta
@@ -112,6 +124,7 @@ javac ex05/*.java
 | ex03 | `java ex03.Main` |
 | ex04 | `java ex04.Main` |
 | ex05 | `java ex05.Main` |
+| ex06 | `java ex06.Main` |
 
 ## 🎓 Concetti Applicati
 
@@ -125,7 +138,13 @@ Questi esercizi coprono i seguenti concetti fondamentali di Java:
 - **Algoritmi** - pattern matching, frequency analysis, generation patterns
 - **Best practices** - separazione delle responsabilità, codice modulare
 
+## Documentazione
+
+La documentazione completa del codice è disponibile in formato Javadoc nella cartella `docs/`.
+Per visualizzare la documentazione, apri il file `docs/index.html` nel browser:
+
 ## Note
 
 - Ogni esercizio è contenuto nel proprio package per evitare conflitti di namespace
 - Il codice include Javadoc per documentazione delle classi e metodi principali
+- La directory `docs/` contiene la documentazione HTML generata automaticamente
