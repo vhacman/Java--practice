@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"ex05","c":"MakeSquare","l":"MakeSquare()","u":"%3Cinit%3E()"},{"p":"ex05","c":"MakeSquare","l":"makeSquare(int)"}];updateSearchResults();
+memberSearchIndex = [{"p":"ex06","c":"Main","l":"Main()","u":"%3Cinit%3E()"},{"p":"ex06","c":"Main","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
