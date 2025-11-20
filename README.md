@@ -46,6 +46,12 @@ Verifica palindromi:
 
 Controlla età inserita
 
+### ex04 - FirstNonRepeatingLetter
+**File:** `Main.java`, `BeConcise.java`
+
+ - Trova il primo carattere nella stringa che appare una sola volta.
+ - Confronto case-insensitive, ma ritorna il carattere nel suo case originale.
+ - 
 ## Esecuzione
 
 ```bash
@@ -55,12 +61,14 @@ javac ex00/Kata.java
 javac ex01/*.java
 javac ex02/*.java
 javac ex03/*.java
+javac ex04/*.java
 
 # Esecuzione
 java ex00.Kata
 java ex01.FirstWindow
 java ex02.Main
 java ex03.Main
+java ex04.Main
 ```
 
 ## Requisiti
