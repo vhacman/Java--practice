@@ -11,6 +11,8 @@ Practice/
 │   ├── ex01/    # Finestra grafica con AWT
 │   └── ex02/    # Palindrome checker
 │   └── ex03/    # BeConcise 
+│   └── ex04/    # FirstNonRepeatingLetter 
+│   └── ex05/    # MakeSquare 
 └── out/         # File compilati
 ```
 
