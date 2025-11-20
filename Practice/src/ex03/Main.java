@@ -23,7 +23,6 @@ public class Main {
      *   <li>Se l'età è negativa, richiede un'età valida</li>
      *   <li>Se l'input non è un numero intero valido, richiede un'età valida</li>
      * </ul>
-     * </p>
      *
      * @param args gli argomenti da riga di comando dove args[0] dovrebbe contenere l'età
      *             come rappresentazione stringa di un numero intero positivo
