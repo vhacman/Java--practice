@@ -10,7 +10,7 @@ Finestra grafica con AWT:
 - Testo centrato con font Arial corsivo
 - Gestione chiusura finestra con `WindowAdapter`
 
-### Kata.java
+### ex00.Kata.java
 Gioco "Sasso, Carta, Forbice":
 - Metodo `rps(String p1, String p2)` che determina il vincitore
 - Gestione di vittoria, sconfitta e pareggio
