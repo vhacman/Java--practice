@@ -1,84 +1,131 @@
-# Esercizi Java
+# Java Practice Exercises
 
-Repository per esercitarsi con Java.
+Repository contenente esercizi pratici.
 
 ## Struttura Progetto
 
 ```
 Practice/
 ├── src/
-│   ├── ex00/    # Gioco Sasso, Carta, Forbice
-│   ├── ex01/    # Finestra grafica con AWT
-│   └── ex02/    # Palindrome checker
-│   └── ex03/    # BeConcise 
-│   └── ex04/    # FirstNonRepeatingLetter 
-│   └── ex05/    # MakeSquare 
-└── out/         # File compilati
+│   ├── ex00/    # Game Logic - Sasso, Carta, Forbice
+│   ├── ex01/    # GUI Programming - Finestra grafica con AWT
+│   ├── ex02/    # String Algorithms - Palindrome checker
+│   ├── ex03/    # Operators - Ternary operator practice
+│   ├── ex04/    # String Manipulation - Character analysis
+│   └── ex05/    # Pattern Generation - ASCII art
+└── out/         # File compilati (.class)
 ```
 
-## Esercizi
+## 📚 Esercizi
 
-### ex00 - Kata (Sasso, Carta, Forbice)
+### ex00 - Rock Paper Scissors (Kata)
 **File:** `Kata.java`
 
-Gioco "Sasso, Carta, Forbice":
+Implementazione del classico gioco "Sasso, Carta, Forbice":
 - Metodo `rps(String p1, String p2)` che determina il vincitore
+- Logica di confronto tra le mosse
 - Gestione di vittoria, sconfitta e pareggio
-- Input: "rock", "paper", "scissors"
+- **Input validi:** `"rock"`, `"paper"`, `"scissors"`
+- **Concetti:** Conditional logic, string comparison
 
-### ex01 - Prima Finestra Grafica
+### ex01 - First GUI Window
 **File:** `FirstWindow.java`, `WindowManager.java`
 
-Finestra grafica con AWT:
-- Sfondo rosa 800x700px
-- Testo centrato con font Arial corsivo
-- Gestione chiusura finestra con `WindowAdapter`
-- Separazione della logica di gestione eventi
+Creazione di una finestra grafica con AWT (Abstract Window Toolkit):
+- Finestra personalizzata con sfondo rosa (800x700px)
+- Rendering di testo centrato con font Arial corsivo
+- Gestione corretta della chiusura con `WindowAdapter`
+- Pattern di separazione delle responsabilità (event handling separato)
+- **Concetti:** GUI programming, event handling, AWT framework
 
-### ex02 - Palindrome
+### ex02 - Palindrome Checker
 **File:** `Main.java`, `Palindrome.java`
 
-Verifica palindromi:
-- Controlla se una stringa è palindroma
-- Ignora spazi e maiuscole/minuscole
-- Implementazione con metodi separati
+Verifica se una stringa è palindroma:
+- Algoritmo di confronto simmetrico
+- Normalizzazione: ignora spazi e differenze maiuscole/minuscole
+- Architettura modulare con metodi separati
+- **Concetti:** String manipulation, algorithm design, case handling
 
-### ex03 - BeConcise
+### ex03 - BeConcise (Age Classifier)
 **File:** `Main.java`, `BeConcise.java`
 
-Controlla età inserita
+Classificazione dell'età usando operatori ternari:
+- Metodo `describeAge(int age)` che categorizza l'età
+- **Categorie:** kid (<13), teenager (13-17), adult (18-64), elderly (65+)
+- Utilizzo avanzato di operatori ternari annidati
+- **Concetti:** Ternary operators, conditional expressions, code conciseness
 
 ### ex04 - FirstNonRepeatingLetter
-**File:** `Main.java`, `BeConcise.java`
+**File:** `Main.java`, `FirstNonRepeatingLetter.java`
 
- - Trova il primo carattere nella stringa che appare una sola volta.
- - Confronto case-insensitive, ma ritorna il carattere nel suo case originale.
+Trova il primo carattere che appare una sola volta in una stringa:
+- Algoritmo di conteggio caratteri (time complexity: O(n))
+- Confronto case-insensitive ma preservazione del case originale
+- Utilizzo di array per tracking dei caratteri
+- **Concetti:** Character frequency analysis, array manipulation, Unicode handling
 
-### ex05 - MakeSquare
-**File:** `Main.java`, `BeConcise.java`
+### ex05 - MakeSquare (ASCII Art Generator)
+**File:** `Main.java`, `MakeSquare.java`
 
-- dato un numero n disegna un quadrato n x height, n x width
+Generatore di quadrati ASCII:
+- Input: numero intero `n`
+- Output: quadrato `n×n` fatto di caratteri `+`
+- Utilizzo di `StringBuilder` per efficienza
+- **Concetti:** Nested loops, string building, pattern generation
 ## Esecuzione
 
+### Compilazione ed esecuzione singolo esercizio
+
 ```bash
-# Compilazione
+# Spostati nella directory src
 cd Practice/src
+
+# Compila un esercizio specifico
+javac ex00/Kata.java
+
+# Esegui
+java ex00.Kata
+```
+
+### Compilazione di tutti gli esercizi
+
+```bash
+cd Practice/src
+
+# Compila tutti gli esercizi
 javac ex00/Kata.java
 javac ex01/*.java
 javac ex02/*.java
 javac ex03/*.java
 javac ex04/*.java
 javac ex05/*.java
-
-# Esecuzione
-java ex00.Kata
-java ex01.FirstWindow
-java ex02.Main
-java ex03.Main
-java ex04.Main
-java ex05.Main
 ```
 
-## Requisiti
+### Quick Reference - Esecuzione diretta
 
-- JDK 8+
+| Esercizio | Comando |
+|-----------|---------|
+| ex00 | `java ex00.Kata` |
+| ex01 | `java ex01.FirstWindow` |
+| ex02 | `java ex02.Main` |
+| ex03 | `java ex03.Main` |
+| ex04 | `java ex04.Main` |
+| ex05 | `java ex05.Main` |
+
+## 🎓 Concetti Applicati
+
+Questi esercizi coprono i seguenti concetti fondamentali di Java:
+
+- **Logica condizionale** - if/else, switch, operatori ternari
+- **Manipolazione stringhe** - confronti, parsing, trasformazioni
+- **Array e collezioni** - utilizzo di array per algoritmi
+- **GUI Programming** - AWT framework, event handling
+- **OOP** - classi, metodi, package structure
+- **Algoritmi** - pattern matching, frequency analysis, generation patterns
+- **Best practices** - separazione delle responsabilità, codice modulare
+
+## Note
+
+- Ogni esercizio è contenuto nel proprio package per evitare conflitti di namespace
+- Il codice include Javadoc per documentazione delle classi e metodi principali
