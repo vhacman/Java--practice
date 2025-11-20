@@ -10,6 +10,7 @@ Practice/
 │   ├── ex00/    # Gioco Sasso, Carta, Forbice
 │   ├── ex01/    # Finestra grafica con AWT
 │   └── ex02/    # Palindrome checker
+│   └── ex03/    # BeConcise 
 └── out/         # File compilati
 ```
 
@@ -40,6 +41,11 @@ Verifica palindromi:
 - Ignora spazi e maiuscole/minuscole
 - Implementazione con metodi separati
 
+### ex03 - BeConcise
+**File:** `Main.java`, `BeConcise.java`
+
+Controlla età inserita
+
 ## Esecuzione
 
 ```bash
@@ -48,11 +54,13 @@ cd Practice/src
 javac ex00/Kata.java
 javac ex01/*.java
 javac ex02/*.java
+javac ex03/*.java
 
 # Esecuzione
 java ex00.Kata
 java ex01.FirstWindow
 java ex02.Main
+java ex03.Main
 ```
 
 ## Requisiti
